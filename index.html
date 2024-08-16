@@ -6,6 +6,13 @@
   <title>GitHub Pages with API</title>
 </head>
 <body>
+  <form id="contact-form" action="https://your-server.com/api/submit" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
   <div id="data-container"></div>
   <script>
     fetch('https://your-server.com/api/data')
