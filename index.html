@@ -21,23 +21,30 @@
             background-attachment: fixed; /* Make the image stay fixed when scrolling */
         }
 
-        /* Position the name near the ground level */
+        /* Position the name on the left side of the tree in the sky */
         .name {
             position: absolute;
-            bottom: 20%; /* Adjust this value as needed for your desired placement */
-            left: 50%;
-            transform: translateX(-50%); /* Center the name horizontally */
-            color: rgba(255, 255, 255, 0.8); /* Softer white color */
+            top: 15%; /* Position it in the sky */
+            left: 10%; /* Position to the left of the tree */
+            color: white;
             font-family: Arial, sans-serif;
-            font-size: 36px; /* Subtle size */
-            font-weight: 300; /* Light weight */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight shadow for clarity */
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000; /* Add a shadow for better visibility */
         }
-
-        /* Style the buttons */
+        .intro{
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            font-weight: Normal;
+        }
+        /* Style the buttons in the water reflection */
         .buttons {
             position: absolute;
-            bottom: 10%; /* Buttons slightly below the name */
+            bottom: 15%; /* Position it in the water reflection area */
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -66,10 +73,10 @@
 </head>
 <body>
 
-    <!-- Name at the bottom pointing towards buttons -->
+    <!-- Text in the sky near the tree -->
     <div class="name">Shashi Kumar</div>
-
-    <!-- Buttons just below the name -->
+    <div class="intro">Hello Iam a devops enthusiast This is my portfolio</div>
+    <!-- Buttons in the water reflection -->
     <div class="buttons">
         <a href="projects.html"><button>Projects</button></a>
         <a href="profiles.html"><button>Profiles</button></a>
