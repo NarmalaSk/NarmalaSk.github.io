@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full-Page Background Image</title>
+    <title>PORTFOLIO</title>
     <style>
         /* Set the body and html to cover the full height of the viewport */
         html, body {
@@ -14,21 +14,22 @@
 
         /* Add the background image to the body */
         body {
-            background-image: url('views/frontpage.jpg'); /* Add your image URL here */
+            background-image: url('views/frontpage.jpg'); /* Path to your image */
             background-size: cover;     /* Ensure the image covers the entire page */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Prevent the image from repeating */
             background-attachment: fixed; /* Make the image stay fixed when scrolling */
         }
 
-        /* Optional: Add some text styling to show content over the background */
+        /* Style the content */
         .content {
             text-align: center;
             color: white;
             font-family: Arial, sans-serif;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+            position: absolute;
+            bottom: 10%; /* Position the text near the bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Center the text horizontally */
         }
     </style>
 </head>
@@ -36,8 +37,8 @@
 
     <!-- You can add content here -->
     <div class="content">
-        <h1>Welcome to My Website</h1>
-        <p>This is an example of a full-page background image.</p>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal space.</p>
     </div>
 
 </body>
