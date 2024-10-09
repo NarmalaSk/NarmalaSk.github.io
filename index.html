@@ -21,22 +21,23 @@
             background-attachment: fixed; /* Make the image stay fixed when scrolling */
         }
 
-        /* Position the name on the left side of the tree in the sky */
+        /* Position the name near the ground level */
         .name {
             position: absolute;
-            top: 15%; /* Position it in the sky */
-            left: 10%; /* Position to the left of the tree */
-            color: rgba(255, 255, 255, 0.8); /* A softer white color */
+            bottom: 20%; /* Adjust this value as needed for your desired placement */
+            left: 50%;
+            transform: translateX(-50%); /* Center the name horizontally */
+            color: rgba(255, 255, 255, 0.8); /* Softer white color */
             font-family: Arial, sans-serif;
-            font-size: 36px; /* Reduced font size */
-            font-weight: 300; /* Lighter font weight */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            font-size: 36px; /* Subtle size */
+            font-weight: 300; /* Light weight */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight shadow for clarity */
         }
 
-        /* Style the buttons in the water reflection */
+        /* Style the buttons */
         .buttons {
             position: absolute;
-            bottom: 15%; /* Position it in the water reflection area */
+            bottom: 10%; /* Buttons slightly below the name */
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -65,10 +66,10 @@
 </head>
 <body>
 
-    <!-- Text in the sky near the tree -->
+    <!-- Name at the bottom pointing towards buttons -->
     <div class="name">Shashi Kumar</div>
 
-    <!-- Buttons in the water reflection -->
+    <!-- Buttons just below the name -->
     <div class="buttons">
         <a href="projects.html"><button>Projects</button></a>
         <a href="profiles.html"><button>Profiles</button></a>
