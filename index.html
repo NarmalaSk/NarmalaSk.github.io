@@ -8,7 +8,7 @@
         /* Set the body and html to cover the full height of the viewport */
         html, body {
             height: 100%;
-            margin: 12;
+            margin: 12px; /* Specify unit for margin */
             padding: 0;
         }
 
@@ -31,18 +31,38 @@
             left: 50%;
             transform: translateX(-50%); /* Center the text horizontally */
         }
+
+        /* Style for buttons */
+        button {
+            padding: 10px 20px;
+            background-color: #555;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #777; /* Change color when hovering */
+        }
+
+        a {
+            text-decoration: none; /* Remove underline from links */
+        }
     </style>
 </head>
 <body>
 
-    <!-- You can add content here -->
+    <!-- Content section with links to different pages -->
     <div class="content">
         <h1>Tech Gig</h1>
-        <p>HELLO,This is shashi</p>
+        <p>Hello, this is Shashi</p>
         <a href="projects.html"><button>Projects</button></a>
-        <a href="Contact.html"><button>Contact</button></a>
-        <a href="Skills.html"><button>Skills</button></a>
-        <a href="Profiles"><button></button></a>
+        <a href="contact.html"><button>Contact</button></a>
+        <a href="skills.html"><button>Skills</button></a>
+        <a href="profiles.html"><button>Profiles</button></a> <!-- Added missing text and .html -->
     </div>
+
 </body>
 </html>
