@@ -14,7 +14,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3  # Step to pull the latest code from the repository
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3  # GitHub Pages action
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.7.2
       with:
-        publish_dir: ./  # Directory where your HTML files are located (root in this case)
+          folder: ./ # The folder the action should deploy.irectory where your HTML files are located (root in this case)
