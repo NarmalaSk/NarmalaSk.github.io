@@ -1,21 +1,29 @@
-# CXInfo - Customer Experience Bots
+# SXInfo
 
-CXInfo is a platform that provides insights into the best AI-powered customer experience bots. It showcases various bots' capabilities and features that are revolutionizing the customer service industry. Explore top bots like Dialogflow, Amazon Chatbot, IBM Watson, and Google Cloud for automating and enhancing customer interactions.
+SXInfo is a robust command-line tool designed to simplify DevOps workflows, automate cloud resource management, and streamline infrastructure provisioning. Whether you're managing cloud infrastructure, automating tasks, or leveraging APIs, SXInfo is your go-to CLI tool.
 
 ## Features
+- Automate repetitive DevOps tasks.
+- Generate scripts for popular cloud platforms like AWS, Azure, GCP, and more.
+- Manage and provision infrastructure using tools like Ansible, Terraform, and Pulumi.
+- Integrate with APIs for seamless cloud operations.
+- Lightweight and easy-to-use interface.
 
-- **Explore Top Bots**: View and learn about some of the most popular customer experience bots including:
-  - **Dialogflow**: Google's conversational AI platform.
-  - **Amazon Chatbot**: Amazon's AI-driven chatbot for customer service.
-  - **IBM Watson**: IBM's AI-powered conversation platform.
-  - **Google Cloud**: Google's cloud-based AI tools for customer service.
-  
-- **Learn About Bots**: Discover the features and capabilities of each bot, and understand how they can transform your business by automating customer interactions.
+---
 
-## Technologies Used
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Supported Platforms](#supported-platforms)
+4. [Contributing](#contributing)
+5. [License](#license)
 
-- **HTML5**
-- **CSS3**
-- **JavaScript** (for dynamic interactions)
-- **Responsive Design** (for mobile and desktop compatibility)
+---
 
+## Installation
+
+### From Source
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/SXInfo.git
+   cd SXInfo

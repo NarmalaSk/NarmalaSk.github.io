@@ -1,9 +1,10 @@
-/* General Styles */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1; /* Light gray background */
+    background-color: #f4f4f4;
 }
 
 .container {
@@ -11,126 +12,102 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styles */
+h2 {
+    color: #333;
+}
+
+/* Header Styling */
 header {
-    background: linear-gradient(135deg, #00b894, #0984e3); /* Gradient background */
+    background-color: #333;
     color: white;
     padding: 20px 0;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
-header .logo img {
-    width: 120px; /* Set the width of the logo */
-    height: 100px; /* Set the height of the logo */
-    margin-right: 10px;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
+header .logo {
+    font-size: 1.8em;
     font-weight: bold;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 5px;
-    font-style: italic;
+header .logo .logo-text {
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
 }
 
-nav ul li {
-    margin-left: 20px;
+header nav ul li {
+    margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
-    padding: 5px 10px;
-    border-radius: 5px;
+    text-transform: uppercase;
 }
 
-nav ul li a:hover {
-    background-color: #dff9fb; /* Light hover background */
-    color: #2d3436; /* Dark text on hover */
+header nav ul li a:hover {
+    border-bottom: 2px solid #ffcc00;
 }
 
-/* About Section */
-#about {
-    background: linear-gradient(135deg, #00b894, #0984e3); /* Same gradient as header */
-    color: white;
+/* Section Styling */
+section {
     padding: 50px 0;
-    text-align: center;
 }
 
-#about h2 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-#about p {
+#about p, #api p {
     font-size: 1.2em;
-    font-style: italic;
+    color: #555;
 }
 
-/* Bot List Section */
-#bot-list {
-    background-color: #ecf0f1; /* Very light gray background */
-    padding: 50px 0;
-    text-align: center;
-}
-
-#bot-list h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
+/* Cloud and Infrastructure Section */
 .image-gallery {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .image-item {
-    background-color: white;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
     text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .image-item img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .image-item p {
     font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 10px;
+    color: #333;
 }
 
-/* Footer Section */
+/* Footer Styling */
 footer {
-    background-color: #2d3436; /* Darker footer background */
+    background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
+    padding: 10px 0;
 }

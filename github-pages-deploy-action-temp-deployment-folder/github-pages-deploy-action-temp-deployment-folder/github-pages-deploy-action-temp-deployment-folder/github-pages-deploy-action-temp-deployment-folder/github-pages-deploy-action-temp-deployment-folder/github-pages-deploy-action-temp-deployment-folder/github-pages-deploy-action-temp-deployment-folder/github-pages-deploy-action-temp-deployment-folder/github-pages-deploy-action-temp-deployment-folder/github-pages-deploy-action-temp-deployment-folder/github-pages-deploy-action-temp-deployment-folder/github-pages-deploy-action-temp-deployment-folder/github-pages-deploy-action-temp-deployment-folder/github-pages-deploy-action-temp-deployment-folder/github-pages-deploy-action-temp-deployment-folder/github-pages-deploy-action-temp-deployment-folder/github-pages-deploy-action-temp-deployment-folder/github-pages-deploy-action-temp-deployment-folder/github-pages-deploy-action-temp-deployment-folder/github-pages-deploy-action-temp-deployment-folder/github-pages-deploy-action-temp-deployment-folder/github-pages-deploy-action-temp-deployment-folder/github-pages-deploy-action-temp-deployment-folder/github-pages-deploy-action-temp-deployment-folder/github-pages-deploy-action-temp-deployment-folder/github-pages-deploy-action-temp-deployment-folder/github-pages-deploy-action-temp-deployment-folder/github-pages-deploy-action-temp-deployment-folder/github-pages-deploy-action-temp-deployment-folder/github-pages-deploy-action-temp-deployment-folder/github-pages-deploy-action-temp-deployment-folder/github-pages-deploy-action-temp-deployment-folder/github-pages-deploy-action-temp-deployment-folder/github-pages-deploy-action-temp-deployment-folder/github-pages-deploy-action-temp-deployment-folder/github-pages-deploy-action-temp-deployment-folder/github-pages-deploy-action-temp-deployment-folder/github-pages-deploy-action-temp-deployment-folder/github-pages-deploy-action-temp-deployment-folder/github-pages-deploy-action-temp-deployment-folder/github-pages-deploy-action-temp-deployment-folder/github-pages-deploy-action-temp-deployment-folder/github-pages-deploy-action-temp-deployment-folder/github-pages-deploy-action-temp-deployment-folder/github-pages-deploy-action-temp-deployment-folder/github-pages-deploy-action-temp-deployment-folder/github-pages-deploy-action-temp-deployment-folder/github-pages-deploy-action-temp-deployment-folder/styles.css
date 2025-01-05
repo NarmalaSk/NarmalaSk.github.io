@@ -77,7 +77,10 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: auto;  /* Pushes footer to bottom of the page */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 footer p {
