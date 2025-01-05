@@ -1,49 +1,19 @@
-# SXInfo
+# Shash
 
-SXInfo is a robust command-line tool designed to simplify DevOps workflows, automate cloud resource management, and streamline infrastructure provisioning. Whether you're managing cloud infrastructure, automating tasks, or leveraging APIs, SXInfo is your go-to CLI tool.
+Shash is a robust command-line tool for generating automation scripts, simplifying DevOps workflows, and streamlining cloud and infrastructure management. It supports various cloud platforms and automation tools, making it easier for developers and DevOps engineers to manage their cloud resources efficiently.
 
 ## Features
-- Automate repetitive DevOps tasks.
-- Generate scripts for popular cloud platforms like AWS, Azure, GCP, and more.
-- Manage and provision infrastructure using tools like Ansible, Terraform, and Pulumi.
-- Integrate with APIs for seamless cloud operations.
-- Lightweight and easy-to-use interface.
 
----
+- **Automation Scripts**: Generate scripts for automating cloud infrastructure management.
+- **Cloud Support**: Integrates with popular cloud platforms like AWS, Google Cloud, and Azure.
+- **Infrastructure as Code**: Supports Terraform and Pulumi for cloud resource provisioning.
+- **Pre-configured API**: Easily integrate with your applications to automate cloud tasks.
+- **DevOps Focused**: Streamline your DevOps workflows with ease and efficiency.
 
-## Table of Contents
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Supported Platforms](#supported-platforms)
-4. [Contributing](#contributing)
-5. [License](#license)
+## Installation
 
----
+To install Shash, simply download the latest release from the [releases page](https://github.com/yourusername/shash/releases) or use the following commands:
 
-## Contributor Guidelines
-Follow the coding standards and style guides.
-Include meaningful commit messages.
-Write clear, concise documentation for any new features.
-Ensure your code passes existing tests and write new tests if applicable.
-Issues
-If you find a bug or have a feature request, create an issue on the Issues page.
-
-## License
-SXInfo is licensed under the MIT License.
-
-Feel free to use, modify, and distribute this project as per the license terms.
-
-## Acknowledgments
-Thanks to all contributors who make this project possible. 💖
-
-## Contact
-For questions or suggestions, feel free to reach out:
-
-Email: shashinarmala29@gmail.com
-GitHub: https://github.com/NarmalaSk
-
-### From Source
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/SXInfo.git
-   cd SXInfo
+### Homebrew (macOS)
+```sh
+brew install shash
