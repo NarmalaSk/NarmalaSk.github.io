@@ -39,8 +39,8 @@ Thanks to all contributors who make this project possible. 💖
 ## Contact
 For questions or suggestions, feel free to reach out:
 
-Email: your-email@example.com
-GitHub: YourUsername
+Email: shashinarmala29@gmail.com
+GitHub: 
 
 ### From Source
 1. Clone the repository:
