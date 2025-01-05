@@ -18,17 +18,29 @@ main {
 
 /* Style for the header */
 header {
+    display: flex;
+    justify-content: space-between;  /* Aligns logo to the left, and nav to the right */
+    align-items: center;
     background-color: #3498db;
     color: white;
-    padding: 1rem;
-    text-align: center;
+    padding: 1rem 2rem;
 }
 
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header .logo p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Navigation */
 header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 header nav ul li {
