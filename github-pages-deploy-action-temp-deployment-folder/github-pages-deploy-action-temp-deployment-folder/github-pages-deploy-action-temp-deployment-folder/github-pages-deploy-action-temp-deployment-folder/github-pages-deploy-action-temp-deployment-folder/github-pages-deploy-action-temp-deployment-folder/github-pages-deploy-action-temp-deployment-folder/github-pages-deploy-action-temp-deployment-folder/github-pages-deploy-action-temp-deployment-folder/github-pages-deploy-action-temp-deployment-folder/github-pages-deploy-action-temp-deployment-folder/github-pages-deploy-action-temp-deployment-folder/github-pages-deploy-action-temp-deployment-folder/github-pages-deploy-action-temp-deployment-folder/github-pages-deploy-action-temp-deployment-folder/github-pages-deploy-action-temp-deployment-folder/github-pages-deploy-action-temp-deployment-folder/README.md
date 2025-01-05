@@ -40,7 +40,7 @@ Thanks to all contributors who make this project possible. 💖
 For questions or suggestions, feel free to reach out:
 
 Email: shashinarmala29@gmail.com
-GitHub: 
+GitHub: https://github.com/NarmalaSk
 
 ### From Source
 1. Clone the repository:
