@@ -20,7 +20,27 @@ SXInfo is a robust command-line tool designed to simplify DevOps workflows, auto
 
 ---
 
-## Installation
+## Contributor Guidelines
+Follow the coding standards and style guides.
+Include meaningful commit messages.
+Write clear, concise documentation for any new features.
+Ensure your code passes existing tests and write new tests if applicable.
+Issues
+If you find a bug or have a feature request, create an issue on the Issues page.
+
+## License
+SXInfo is licensed under the MIT License.
+
+Feel free to use, modify, and distribute this project as per the license terms.
+
+## Acknowledgments
+Thanks to all contributors who make this project possible. 💖
+
+## Contact
+For questions or suggestions, feel free to reach out:
+
+Email: your-email@example.com
+GitHub: YourUsername
 
 ### From Source
 1. Clone the repository:
