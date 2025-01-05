@@ -9,7 +9,202 @@ body {
 
 .container {
     width: 80%;
+    margin: 0 auto;/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc; /* Light background color for a clean look */
+}
+
+.container {
+    width: 80%;
     margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Header Styling */
+header {
+    background-color: #0066cc; /* Bold blue theme */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header .logo {
+    font-size: 2.8em; /* Large logo font size */
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px; /* Adjust logo image size */
+    height: auto;
+    margin-right: 15px;
+}
+
+header .logo .logo-text {
+    font-family: 'Times New Roman', Times, serif; /* Elegant serif font for logo */
+    color: #ffffff; /* White color for contrast */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover for a modern touch */
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Cloud and Infrastructure Section */
+#cloud-infrastructure .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.image-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 30px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.image-item p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+}
+
+.image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* API Section */
+#api {
+    background-color: #eef2f7; /* Light background for contrast */
+    padding: 40px 0;
+    text-align: center;
+}
+
+#api p {
+    font-size: 1.15em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0066cc; /* Matching blue theme */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+
+    header .logo {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .image-item {
+        width: 170px;
+        height: 220px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
 }
 
 h2 {

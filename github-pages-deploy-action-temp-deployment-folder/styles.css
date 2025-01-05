@@ -227,9 +227,9 @@ header .logo {
 }
 
 header .logo .logo-text {
-    font-family: 'Times New Roman', Times, serif; /* Elegant serif font */
-    color: #ffffff; /* White color for contrast */
-    text-transform: uppercase;
+    font-family: 'Tangerine', serif;
+    color: #B5A900; /* White color for contrast */
+    
     letter-spacing: 3px; /* Wider letter spacing for a premium look */
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Soft glow effect */
 }
