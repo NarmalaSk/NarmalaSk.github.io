@@ -1,0 +1,47 @@
+.Name{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Objective{
+    font-size: 21px;
+    position: relative;
+    left: 443px;
+    right: 3px;
+}
+.Education{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 443px;
+    right: 3px;
+}
+.Experience{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 443px;
+    right: 3px;
+}
+.Projects{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 443px;
+    right: 3px;
+}
+.Tools{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 443px;
+    right: 3px;
+}
+.body{
+    align-items: center;
+}
+.Obj-descr{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
