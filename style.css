@@ -1,6 +1,6 @@
 .Name{
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
 }
 .Objective{
@@ -44,4 +44,12 @@
     position: relative;
     font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
+}
+a{
+    font-size: 18px;
+    color: black;
+}
+.line{
+    position: relative;
+    left: 23px;
 }
