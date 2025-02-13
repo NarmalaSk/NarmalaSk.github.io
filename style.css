@@ -1,55 +1,41 @@
+.box{
+    width: 900px;
+    height: 1100px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    position: relative;
+    top: 0px;
+    left: 333px;
+}
 .Name{
-    text-align: center;
-    font-size: 18px;
+    font-size: 32px;
     font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 331px;
+    font-weight: 900;
 }
 .Objective{
-    font-size: 21px;
-    position: relative;
-    left: 443px;
-    right: 3px;
-}
-.Education{
-    font-size: 21px;
+    font-size: 29px;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    left: 443px;
-    right: 3px;
+    left: 20px;
+    font-weight: 900;
 }
-.Experience{
-    font-size: 21px;
-    font-family: 'Times New Roman', Times, serif;
+.contactdetails{
     position: relative;
-    left: 443px;
-    right: 3px;
+    left: 152px;
 }
-.Projects{
-    font-size: 21px;
-    font-family: 'Times New Roman', Times, serif;
+.text{
+    font-weight: 100;
+    font-size: 16px;
+}
+font{
+    font-weight: 100;
+}
+hr{
     position: relative;
-    left: 443px;
-    right: 3px;
-}
-.Tools{
-    font-size: 21px;
-    font-family: 'Times New Roman', Times, serif;
-    position: relative;
-    left: 443px;
-    right: 3px;
-}
-.body{
-    align-items: center;
-}
-.Obj-descr{
-    position: relative;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: lighter;
-}
-a{
-    font-size: 18px;
+    right: 20px;
+    font-weight: 200;
     color: black;
-}
-.line{
-    position: relative;
-    left: 23px;
 }
