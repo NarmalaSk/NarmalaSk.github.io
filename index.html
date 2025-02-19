@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <title>
-        CloudKodes
-    </title>
-    <style>
-        button{
-            size: 23px;
-            color: #4CAF50;
-        }
-    </style>
-    <body bgcolor="#a89332">
-      CloudKodes is a platform that provides you with the best resources to learn cloud computing and DevOps.   
-     <br><button><a href=resume.html>resume</a></button>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Kodes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>CloudKodes</h1>
+        <div class="viewcount" id="visitorCount">
+            Visitors Count: 0
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <p class="intro-text">
+            Welcome to my website! Iam Shashi ,This is Your destination for cloud articles and tutorials.<br>
+            Explore our <strong>Articles</strong>, <strong>GitHub</strong>. <br>
+            <em>CloudKodes</em> is a blog dedicated to providing tutorials, guides, and tips on cloud computing technologies.
+        </p>
+
+        <!-- Box Container -->
+        <div class="box-container">
+            <div class="box"><a href=resume.html>Resume</a></div>
+            <div class="box"><a href=https://medium.com/devops-dev/add-gce-instances-as-self-hosted-runners-to-github-actions-095a62949411>Blogs</a></div>
+            <div class="box"><a href=resume.html>Projects</a></div>
+        </div>
+
+        <!-- Experience Section Below Boxes -->
+       <!-- Experience Section BELOW the boxes -->
+<div class="experience-section">
+    <h2>Open Source Contributions & Freelance </h2>
+    <p>Worked on multiple open-source projects and freelancing gigs to build impactful cloud-based solutions.</p>
+
+    <div class="exp-buttons">
+        <a href="https://github.com/pulls?q=is%3Apr+author%3ANarmalaSk+archived%3Afalse+is%3Aclosed" class="exp-btn">Open Source</a>
+        <a href="opensource.html" class="exp-btn">Freelancing</a>
+    </div>
+</div>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Cloud Kodes</p>
+        <div class="footer-links">
+            <a href="#">GitHub</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Slack</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Update Visitor Count -->
+    <script>
+        document.getElementById("visitorCount").textContent = "Visitors Count: " + Math.floor(Math.random() * 1000);
+    </script>
+</body>
 </html>
