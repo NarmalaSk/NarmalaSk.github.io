@@ -55,11 +55,11 @@
     </footer>
 
     <script>
-        fetch('https://ip-api.com/json/')
+        fetch('https://api.ipify.org?format=json')
             .then(response => response.json())
             .then(data => {
                 let visitorCount = 0;
-                if (data.query !== '0.0.0.0') {
+                if (data.ip !== '0.0.0.0') {
                     visitorCount++;
                 }
                 document.getElementById('visitorCount').innerText = "Visitors: " + visitorCount;
