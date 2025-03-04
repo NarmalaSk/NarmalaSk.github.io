@@ -20,5 +20,5 @@ jobs:
 
        - name: Install boto3 and Python
          run: | 
-                sudo apt install -y boto3
                 sudo apt install -y python3
+                sudo apt install -y python3-boto3
