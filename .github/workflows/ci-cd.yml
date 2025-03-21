@@ -27,14 +27,18 @@ jobs:
          run: |
                 sudo apt install git
                 git clone https://github.com/NarmalaSk/kitikiplot.git
-                
-       - name: pwd
-         run:  pwd
-         
-       - name: ls
-         run:  ls
-         
+                         
        - name: Install pytest
          run: |
                pip install pytest
+
+       - name: Install dependencies
+         run: |
+               cd Kitikiplot
+               pip install requirements.txt
+
+       - name: Unit Testing
+         run: |
+               cd Kitikiplot
+               pytest Unittest.py
                
