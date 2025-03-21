@@ -31,6 +31,8 @@ jobs:
        - name: Install pytest
          run: |
                pip install pytest
+       - name: print drs
+         run: ls
 
        - name: Install dependencies
          run: |
