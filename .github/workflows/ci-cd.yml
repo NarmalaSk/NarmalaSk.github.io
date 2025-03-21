@@ -29,8 +29,10 @@ jobs:
                 git clone https://github.com/NarmalaSk/kitikiplot.git
                 
        - name: pwd
-         run: | pwd
-                ls
+         run:  pwd
+         
+       - name: ls
+         run:  ls
          
        - name: Install pytest
          run: |
