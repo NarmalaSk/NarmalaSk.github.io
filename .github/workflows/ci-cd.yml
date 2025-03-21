@@ -22,3 +22,14 @@ jobs:
          run: | 
                 sudo apt install -y python3
                 sudo apt install -y python3-boto3
+                
+       - name: clone git repo
+         run: |
+                sudo apt install git
+                git clone https://github.com/NarmalaSk/kitikiplot.git
+                cd Kitikiplot/Kitikiplot
+
+       - name: Install pytest
+         run: |
+               pytest Unittest.py
+               
