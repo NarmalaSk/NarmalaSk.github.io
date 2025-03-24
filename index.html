@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narmala SK - Portfolio</title>
+    <title>Shashi Kumar - DevOps & Cloud Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -401,6 +401,75 @@
             gap: 0.3rem;
         }
 
+        /* GSOC Section */
+        .gsoc {
+            background-color: #f9f9f9;
+        }
+
+        .gsoc-content {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gsoc-logo {
+            width: 200px;
+            margin: 0 auto 2rem;
+            display: block;
+        }
+
+        .gsoc-details h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .gsoc-details .organization {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        .gsoc-details .period {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .gsoc-details .description {
+            margin-bottom: 1.5rem;
+        }
+
+        .gsoc-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gsoc-metric {
+            flex: 1;
+            min-width: 150px;
+            background-color: var(--light-color);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .gsoc-metric h5 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .gsoc-metric .number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
         /* Contact Section */
         .contact {
             background-color: var(--secondary-color);
@@ -546,11 +615,12 @@
     <header id="header">
         <div class="container">
             <nav>
-                <div class="logo">Narmala SK</div>
+                <div class="logo">Shashi Kumar</div>
                 <ul class="menu" id="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#gsoc">GSoC</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -564,15 +634,15 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <img src="/api/placeholder/150/150" alt="Narmala SK" class="hero-image">
-            <h1>Narmala SK</h1>
-            <h2>Software Developer</h2>
-            <p>I craft elegant solutions to complex problems through clean, efficient code. Passionate about creating meaningful applications that make a difference.</p>
+            <img src="/api/placeholder/150/150" alt="Shashi Kumar" class="hero-image">
+            <h1>Shashi Kumar</h1>
+            <h2>DevOps & Cloud Engineer</h2>
+            <p>Seeking a role in DevOps and cloud engineering that offers opportunities for rational career growth and job satisfaction. With hands-on project experience in cloud technologies, networking, and automation.</p>
             <div class="social-links">
                 <a href="https://github.com/NarmalaSk" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/shashi-kumar-4b0449281/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:shashinarmala29@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+917989265399" target="_blank"><i class="fas fa-phone"></i></a>
             </div>
             <a href="#projects" class="btn">View My Work</a>
         </div>
@@ -586,26 +656,31 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="/api/placeholder/400/320" alt="About Narmala SK">
+                    <img src="/api/placeholder/400/320" alt="About Shashi Kumar">
                 </div>
                 <div class="about-text">
                     <h4>Who I Am</h4>
-                    <p>I'm a passionate software developer with a strong foundation in both frontend and backend technologies. My journey in tech started when I built my first website in college, and I've been hooked ever since.</p>
-                    <p>With a background in computer science and years of hands-on experience, I specialize in creating robust, scalable, and user-friendly applications. I believe in writing clean, maintainable code and constantly learning new technologies to stay at the forefront of this ever-evolving field.</p>
+                    <p>I'm a DevOps and Cloud Engineer passionate about building robust, scalable infrastructure and automating deployment pipelines. Currently pursuing a Bachelor's degree in Data Science at Avanthi Institute of Engineering & Technology (2021-2025).</p>
+                    <p>With experience in cloud technologies, containerization, and CI/CD pipelines, I aim to progress into a decision-making role where I can drive impactful strategies and innovations in cloud architecture and DevOps practices.</p>
                     
                     <div class="skills">
                         <h4>Technical Skills</h4>
                         <div class="skill-tags">
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">Git</span>
                             <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Prometheus</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">ELK Stack</span>
                         </div>
                     </div>
                 </div>
@@ -613,8 +688,8 @@
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
+    <!-- Experience Section -->
+    <section id="experience" class="resume">
         <div class="container">
             <div class="section-title">
                 <h3>My Experience</h3>
@@ -623,38 +698,83 @@
                 <!-- Experience -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4>Senior Software Developer</h4>
-                        <h5>Tech Solutions Inc.</h5>
-                        <div class="date">Jan 2023 - Present</div>
-                        <p>Led development of key features for enterprise clients, implemented CI/CD pipelines, and mentored junior developers.</p>
+                        <h4>DevOps Engineer (Freelance)</h4>
+                        <h5>VTEX-AI</h5>
+                        <div class="date">March 2025</div>
+                        <p>Deployed a Python Fast-API based diabetes prediction model on AWS ECS with automated CI/CD using Jenkins. Achieved 3x faster performance by integrating Redis caching while ensuring HIPAA-compliant best practices.</p>
+                        <p>Implemented security scanning with OWASP checks and Trivy vulnerability scanning. Optimized deployment using canary deployments and automated the entire pipeline for seamless model updates.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4>Software Developer</h4>
-                        <h5>Digital Innovations</h5>
-                        <div class="date">Mar 2020 - Dec 2022</div>
-                        <p>Developed and maintained multiple web applications using React and Node.js, collaborated with design and product teams.</p>
+                        <h4>Solutions Architect (Freelance)</h4>
+                        <h5>Independent Project</h5>
+                        <div class="date">February 2025</div>
+                        <p>Developed an AWS Lambda function using Python and configured AWS API Gateway for secure communication. Integrated email sending functionality into existing architecture.</p>
+                        <p>Built a frontend Contact page using React and automated resource provisioning with Terraform for efficient infrastructure management.</p>
                     </div>
                 </div>
 
                 <!-- Education -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4>Master's in Computer Science</h4>
-                        <h5>Tech University</h5>
-                        <div class="date">2018 - 2020</div>
-                        <p>Specialized in Software Engineering with focus on distributed systems and cloud computing.</p>
+                        <h4>Bachelor of Science in Data Science</h4>
+                        <h5>Avanthi Institute of Engineering & Technology</h5>
+                        <div class="date">2021 - 2025</div>
+                        <p>Relevant Courses: Machine Learning, Data Mining, Cloud Computing, Computer Networks, Database Systems, Algorithm Design, Operating Systems</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4>Bachelor's in Computer Science</h4>
-                        <h5>Engineering College</h5>
-                        <div class="date">2014 - 2018</div>
-                        <p>Graduated with honors, participated in multiple hackathons and coding competitions.</p>
+                        <h4>IBM DevOps and Software Engineering</h4>
+                        <h5>Certification</h5>
+                        <div class="date">2024</div>
+                        <p>Completed the IBM DevOps and Software Engineering Capstone Project certification, gaining hands-on experience with industry-standard DevOps practices and tools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GSoC Section -->
+    <section id="gsoc" class="gsoc">
+        <div class="container">
+            <div class="section-title">
+                <h3>Google Summer of Code</h3>
+            </div>
+            <div class="gsoc-content">
+                <img src="/api/placeholder/200/100" alt="Google Summer of Code" class="gsoc-logo">
+                <div class="gsoc-details">
+                    <h4>DevOps Infrastructure Automation Project</h4>
+                    <div class="organization">Organization: Cloud Native Computing Foundation (CNCF)</div>
+                    <div class="period">May 2024 - August 2024</div>
+                    <div class="description">
+                        <p>As a Google Summer of Code participant, I contributed to the development of infrastructure automation tools for cloud-native applications. My project focused on improving deployment pipelines and monitoring capabilities for Kubernetes-based applications.</p>
+                        
+                        <p>Key achievements:</p>
+                        <ul style="list-style: disc; margin-left: 20px; margin-bottom: 15px;">
+                            <li>Developed a custom Kubernetes operator for automating complex deployment scenarios</li>
+                            <li>Created a monitoring solution that integrates Prometheus and Grafana for real-time metrics visualization</li>
+                            <li>Implemented CI/CD pipelines using GitHub Actions for testing and deploying cloud-native applications</li>
+                            <li>Contributed to open-source projects that improve the developer experience in cloud environments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="gsoc-metrics">
+                        <div class="gsoc-metric">
+                            <h5>Code Commits</h5>
+                            <div class="number">85+</div>
+                        </div>
+                        <div class="gsoc-metric">
+                            <h5>Pull Requests</h5>
+                            <div class="number">32</div>
+                        </div>
+                        <div class="gsoc-metric">
+                            <h5>Issues Resolved</h5>
+                            <div class="number">47</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -671,19 +791,23 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="/api/placeholder/400/320" alt="Project 1">
+                        <img src="/api/placeholder/400/320" alt="Cloud Kodes">
                     </div>
                     <div class="project-content">
-                        <h4>E-Commerce Platform</h4>
-                        <p>A full-stack e-commerce solution with product management, cart functionality, and payment integration.</p>
+                        <h4>Cloud Kodes</h4>
+                        <p>Designed and developed a responsive portfolio website with dynamic features like view count tracking with DynamoDB for real-time analytics.</p>
                         <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
                             <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">AWS S3</span>
+                            <span class="project-tag">CloudFront</span>
+                            <span class="project-tag">GitHub Actions</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="http://cloudkodes.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/NarmalaSk" target="_blank"><i class="fab fa-github"></i> Repository</a>
                         </div>
                     </div>
                 </div>
@@ -691,19 +815,22 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="/api/placeholder/400/320" alt="Project 2">
+                        <img src="/api/placeholder/400/320" alt="PetClinic">
                     </div>
                     <div class="project-content">
-                        <h4>Task Management App</h4>
-                        <p>A productivity tool for managing tasks with drag-and-drop functionality, reminders, and team collaboration.</p>
+                        <h4>PetClinic Microservices</h4>
+                        <p>Adopted the Spring PetClinic Microservices for deployment, integrating Jenkins, Kubernetes, and Docker to implement a fully automated CI/CD pipeline with security scanning.</p>
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Material UI</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">Jenkins</span>
+                            <span class="project-tag">Docker</span>
+                            <span class="project-tag">Kubernetes</span>
+                            <span class="project-tag">Helm</span>
+                            <span class="project-tag">Prometheus</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://github.com/spring-petclinic/spring-petclinic-microservices?tab=Apache-2.0-1-ov-file" target="_blank"><i class="fab fa-github"></i> Repository</a>
                         </div>
                     </div>
                 </div>
@@ -711,19 +838,20 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="/api/placeholder/400/320" alt="Project 3">
+                        <img src="/api/placeholder/400/320" alt="OpenWatch">
                     </div>
                     <div class="project-content">
-                        <h4>Weather Dashboard</h4>
-                        <p>A responsive weather application that displays current and forecasted weather data with interactive visualizations.</p>
+                        <h4>OpenWatch</h4>
+                        <p>Developed a System Monitoring Tool using Bash and Python to automate the monitoring and reporting of critical system components, including open ports, Docker containers, and Kubernetes pods.</p>
                         <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">OpenWeather API</span>
-                            <span class="project-tag">Chart.js</span>
+                            <span class="project-tag">Bash</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Docker</span>
+                            <span class="project-tag">Kubernetes</span>
+                            <span class="project-tag">System Monitoring</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://github.com/NarmalaSk/Openwatch/tree/main" target="_blank"><i class="fab fa-github"></i> Repository</a>
                         </div>
                     </div>
                 </div>
@@ -739,10 +867,10 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>I'm always open to new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!</p>
-                    <p><i class="fas fa-envelope"></i> email@example.com</p>
-                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
-                    <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                    <p>I'm always open to new opportunities and collaborations in DevOps and cloud engineering. Whether you have a project in mind or just want to connect, feel free to reach out!</p>
+                    <p><i class="fas fa-envelope"></i> shashinarmala29@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 7989265399</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
@@ -774,66 +902,9 @@
         <div class="container">
             <div class="footer-social">
                 <a href="https://github.com/NarmalaSk" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/shashi-kumar-4b0449281/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:shashinarmala29@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+917989265399" target="_blank"><i class="fas fa-phone"></i></a>
             </div>
             <div class="copyright">
-                &copy; 2025 Narmala SK. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-
-        hamburger.addEventListener('click', function() {
-            menu.classList.toggle('show');
-        });
-
-        // Close menu when clicking on a link
-        const menuLinks = document.querySelectorAll('.menu a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                menu.classList.remove('show');
-            });
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                window.scrollTo({
-                    top: target.offsetTop - 70,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Form submission handler
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Here you would normally send the form data to a server
-                // For demo purposes, we'll just show an alert
-                alert('Thank you for your message! I will get back to you soon.');
-                contactForm.reset();
-            });
-        }
-    </script>
-</body>
-</html>
+                &copy; 2025
