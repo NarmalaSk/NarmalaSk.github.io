@@ -16,7 +16,7 @@ jobs:
       - name: write to file
         run: |
               ifconfig | grep "inet" > Log.md
-              echo "$RUNNER_OS" > Log.md
+              echo "$uname -s" > Log.md
               echo "$GITHUB_WORKFLOW" >Log.md
               
               
