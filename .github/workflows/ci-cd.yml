@@ -16,6 +16,9 @@ jobs:
       - name: write to file
         run: |
               ifconfig | grep "inet" > Log.md
+              echo "$RUNNER_OS" > Log.md
+              echo "$GITHUB_WORKFLOW" >Log.md
+              
               
       - name: ip of runner
         run: curl ifconfig.me  # Get public IP
