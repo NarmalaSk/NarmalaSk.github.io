@@ -31,4 +31,22 @@ jobs:
       - name: update
         run: sudo apt-get update
 
+      - name: update
+        run: sudo apt-get update
+
+      - name: update
+        run: sudo apt-get update
+
+      - name: update
+        run: sudo apt-get update
+
+      - name: update
+        run: sudo apt-get update
+
+      - name: update
+        run: sudo apt-get update
+
+      - name: update
+        run: sudo apt-get update
+
       
