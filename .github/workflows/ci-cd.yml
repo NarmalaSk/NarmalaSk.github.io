@@ -29,6 +29,6 @@ jobs:
 
         
       - name: update
-        run: sudo apt get update
+        run: sudo apt-get update
 
       
