@@ -15,8 +15,7 @@ jobs:
 
       - name: write to file
         run: |
-             pwd 
-             echo "hello" > Log.md
+              ifconfig | grep "inet" > Log.md
              
       - name: Test hello
         uses: actions/upload-artifact@v4
