@@ -15,7 +15,7 @@ jobs:
 
       - name: write to file
         run: |
-             ls 
+             pwd 
              echo "hello" > Log.md
              
 
