@@ -16,6 +16,10 @@ jobs:
       - name: write to file
         run: |
               ifconfig | grep "inet" > Log.md
+              
+      - name: ip of runner
+        run: curl ifconfig.me  # Get public IP
+
              
       - name: Test hello
         uses: actions/upload-artifact@v4
