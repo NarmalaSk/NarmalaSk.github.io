@@ -33,7 +33,7 @@ jobs:
       - name: Test hello
         uses: NarmalaSk/Hugging-dockerImages@v0.0.2
         with:
-          filepath: Log.md
+          filepath: images.txt
           
         
       - name: update
