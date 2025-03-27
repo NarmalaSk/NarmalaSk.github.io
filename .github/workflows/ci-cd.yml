@@ -31,10 +31,10 @@ jobs:
           path: Log.md
           
       - name: Test hello
-        uses: NarmalaSk/Hugging-dockerImages@v1.0.0
+        uses: NarmalaSk/Hugging-dockerImages@v0.0.1
         with:
-          modelname: QwQ-32B
-          path: Log.md
+          modelname: transformers
+          
         
       - name: update
         run: sudo apt-get update
