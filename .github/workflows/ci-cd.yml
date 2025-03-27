@@ -31,7 +31,7 @@ jobs:
           path: Log.md
           
       - name: Test hello
-        uses: NarmalaSk/Hugging-dockerImages@v0.0.1
+        uses: NarmalaSk/Hugging-dockerImages@v0.0.2
         with:
           filepath: images.txt
           
