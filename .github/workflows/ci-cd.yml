@@ -33,7 +33,7 @@ jobs:
       - name: Test hello
         uses: NarmalaSk/Hugging-dockerImages@v0.0.1
         with:
-          modelname: transformers-custom-tokenizers
+          filepath: images.txt
           
         
       - name: update
