@@ -22,8 +22,7 @@ jobs:
 
      - name: Build Docsauraus project
        run: |
-             cd cloudkodes
-             npm run build
+             cd cloudkodes/build
 
       
              
