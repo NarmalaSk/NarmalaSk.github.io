@@ -13,7 +13,7 @@ jobs:
 
      - name: Install libraries
        run: |
-             sudo apt-get install python awscli2 npm 
+             sudo apt update && sudo apt install -y python3 python3-pip awscli npm 
              pip install boto3
 
      - name: Build Docsauraus project
