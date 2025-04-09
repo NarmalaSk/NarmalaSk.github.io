@@ -29,7 +29,7 @@ jobs:
 
       
      - name: Push static site to S3 Bucket
-       run: aws sync cloudkodes/build s3://cloudkodes
+       run: aws s3 sync cloudkodes/build s3://cloudkodes
      
              
    
