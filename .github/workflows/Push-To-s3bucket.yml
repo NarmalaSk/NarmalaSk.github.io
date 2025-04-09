@@ -20,8 +20,12 @@ jobs:
              pip install boto3
              npx create-docusaurus@latest my-website classic
 
-     - name: Build Docsauraus project
-       run: awsconfigure
+     - name: Configure AWS Credentials
+       uses: aws-actions/configure-aws-credentials@v4
+       with:
+        aws-access-key-id: ${{ secrets.AWSACCESSKEYID }}
+        aws-secret-access-key: ${{ secrets.AWSSECRETACCESSKEY }}
+        aws-region: ap-south-1
 
       
              
