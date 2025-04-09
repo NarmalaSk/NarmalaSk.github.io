@@ -19,7 +19,7 @@ jobs:
              sudo ./aws/install --update
              pip install boto3
              npm install docusauraus
-             npx install docusauraus
+             npx create-docusaurus@latest my-website classic
 
      - name: Build Docsauraus project
        run: |
