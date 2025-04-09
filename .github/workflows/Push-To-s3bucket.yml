@@ -18,7 +18,6 @@ jobs:
              unzip awscliv2.zip
              sudo ./aws/install --update
              pip install boto3
-             npm install docusauraus
              npx create-docusaurus@latest my-website classic
 
      - name: Build Docsauraus project
