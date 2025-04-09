@@ -1,0 +1,28 @@
+name: Cicd to push s3 bucket into S3 bucket
+on:
+  push:
+     branches:
+      - main
+     paths:
+      - cloudkodes/build  
+jobs:
+ build:
+   runs-on: ubuntu-latest
+
+   steps: 
+     - name: codecheckout
+       uses: actions/checkout@v4.2.2
+
+     - name: Install libraries
+       run: |
+             sudo apt install python awscli2
+             pip install boto3
+
+     - name: push Build directory to S3 Bucket
+       run: |
+             cd cloudkodes/build
+             
+     
+             
+   
+   
