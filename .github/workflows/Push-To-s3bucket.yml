@@ -2,9 +2,7 @@ name: Cicd to push s3 bucket into S3 bucket
 on:
   push:
      branches:
-      - main
-     paths:
-      - cloudkodes/build  
+      - main 
 jobs:
  build:
    runs-on: ubuntu-latest
@@ -15,12 +13,15 @@ jobs:
 
      - name: Install libraries
        run: |
-             sudo apt install python awscli2
+             sudo apt install python awscli2 npm 
              pip install boto3
 
-     - name: push Build directory to S3 Bucket
+     - name: Build Docsauraus project
        run: |
-             cd cloudkodes/build
+             cd cloudkodes
+             npm run build
+
+      
              
      
              
