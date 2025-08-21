@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloudkodes — Cloud Migration & Backups</title>
+  <meta name="description" content="Cloudkodes provides cloud migration, backup, and DR services. Explore our portfolio and get a free assessment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1020;
+      --bg-soft: #111831;
+      --card: #0f1730;
+      --text: #e6ecff;
+      --muted: #a8b0c9;
+      --brand: #6aa7ff;
+      --brand-2:#70ffd3;
+      --accent:#ffd166;
+      --danger:#ff6b6b;
+      --shadow: 0 20px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;
+      background: radial-gradient(1400px 700px at 80% -10%, rgba(106,167,255,.15), transparent 50%),
+                  radial-gradient(900px 500px at 10% -20%, rgba(112,255,211,.12), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Header / Nav */
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(11,16,32,.85), rgba(11,16,32,.6));
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.3px}
+    .logo{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 10px 24px rgba(106,167,255,.35)}
+    .logo svg{width:22px;height:22px}
+    .nav a{opacity:.9}
+    .nav-links{display:flex;gap:22px;align-items:center}
+    .nav .cta{padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#051126;font-weight:700;box-shadow:var(--shadow)}
+    .menu-btn{display:none;border:1px solid rgba(255,255,255,.15);background:transparent;color:var(--text);border-radius:10px;padding:8px 10px}
+
+    @media (max-width: 860px){
+      .nav-links{display:none}
+      .menu-btn{display:block}
+      .mobile-panel{display:block}
+    }
+
+    .mobile-panel{display:none;border-top:1px solid rgba(255,255,255,.06);background:rgba(7,10,24,.9)}
+    .mobile-links{display:grid;gap:14px;padding:16px 0}
+    .mobile-links a{padding:10px 12px;border-radius:12px}
+    .mobile-links a:hover{background:rgba(255,255,255,.04)}
+
+    /* Hero */
+    .hero{padding:80px 0 40px}
+    .hero-wrap{display:grid;grid-template-columns: 1.1fr .9fr;gap:28px;align-items:center}
+    .badge{display:inline-flex;gap:10px;align-items:center;font-size:.9rem;color:var(--muted);border:1px solid rgba(255,255,255,.12);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.03)}
+    .badge b{color:var(--text)}
+    h1{font-size: clamp(28px, 4.8vw, 56px);line-height:1.05;margin:16px 0}
+    .subtitle{color:var(--muted);font-size: clamp(14px, 1.6vw, 18px)}
+    .actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+    .btn{display:inline-flex;gap:10px;align-items:center;padding:12px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.14)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#051126;font-weight:800;border:none}
+    .btn:hover{transform:translateY(-1px)}
+    .hero-card{background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); padding:22px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.08); box-shadow: var(--shadow)}
+    .stats{display:grid;grid-template-columns: repeat(3,1fr);gap:12px;margin-top:18px}
+    .stat{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:14px;text-align:center}
+    .stat b{display:block;font-size:22px}
+
+    @media (max-width: 980px){
+      .hero-wrap{grid-template-columns: 1fr}
+    }
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
+    .section-head h2{font-size: clamp(22px, 3.2vw, 32px);margin:0}
+    .muted{color:var(--muted)}
+
+    /* Services */
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns: repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns: repeat(2,1fr)}
+    @media (max-width: 980px){
+      .grid.cols-3{grid-template-columns: 1fr}
+      .grid.cols-2{grid-template-columns: 1fr}
+    }
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:20px;box-shadow: var(--shadow)}
+    .card h3{margin:0 0 6px}
+    .chip{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:#051126;background:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700}
+    .card ul{margin:8px 0 0 18px}
+
+    /* Process */
+    .step{display:flex;gap:14px}
+    .step .num{width:36px;height:36px;border-radius:999px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#051126;font-weight:900}
+
+    /* Portfolio */
+    .filters{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 20px}
+    .filter-btn{padding:8px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);cursor:pointer}
+    .filter-btn.active{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#051126;font-weight:800;border:none}
+    .portfolio .item{position:relative;overflow:hidden}
+    .portfolio .thumb{border-radius:14px;border:1px solid rgba(255,255,255,.1);aspect-ratio: 16/10;background:linear-gradient(135deg,#1c274c,#162144)}
+    .portfolio .meta{position:absolute;inset:auto 12px 12px 12px; background: rgba(0,0,0,.45); padding:10px;border-radius:12px}
+
+    /* Testimonials */
+    .quote{font-size:1.05rem}
+    .who{margin-top:10px;color:var(--muted)}
+
+    /* CTA */
+    .cta{display:grid;grid-template-columns: 3fr 2fr;gap:20px;align-items:center;background:linear-gradient(135deg, rgba(106,167,255,.2), rgba(112,255,211,.15));border:1px solid rgba(255,255,255,.16);padding:22px;border-radius:var(--radius)}
+    @media (max-width: 860px){.cta{grid-template-columns: 1fr}}
+
+    /* Contact */
+    form{display:grid;gap:12px}
+    input,select,textarea{background:#0c132a;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px;color:var(--text);font:inherit}
+    textarea{min-height:120px}
+    .inline{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width: 720px){.inline{grid-template-columns:1fr}}
+
+    /* Footer */
+    footer{padding:26px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);margin-top:40px}
+    .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+    .social{display:flex;gap:12px}
+    .social a{padding:8px;border:1px solid rgba(255,255,255,.14);border-radius:10px}
+
+    /* Tiny utility */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="#top" class="brand">
+          <span class="logo" aria-hidden="true">
+            <!-- Cloud-ish glyph -->
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 14.5a4 4 0 1 1 1.7-7.6A6 6 0 0 1 20 9.5a3.5 3.5 0 0 1-.4 7H7" stroke="#051126" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Cloudkodes</span>
+        </a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <a href="#cta" class="cta">Get Free Assessment</a>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">☰ Menu</button>
+      </nav>
+    </div>
+    <div id="mobileNav" class="mobile-panel" hidden>
+      <div class="container">
+        <div class="mobile-links">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <a href="#cta" class="btn primary" style="display:inline-flex">Free Assessment</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <span class="badge">✨ <b>Cloud Migration</b> • Backups • DR</span>
+        <h1>Move to the cloud with zero drama. <br/>We migrate, back up, and secure your stack.</h1>
+        <p class="subtitle">Cloudkodes helps startups and SMBs modernize without downtime: AWS, Azure, GCP, containers, data, and whole apps. We plan, migrate, run, and protect.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Book a discovery call</a>
+          <a class="btn" href="#portfolio">See our work</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>150+ TB</b><span class="muted">Data migrated</span></div>
+          <div class="stat"><b>99.95%</b><span class="muted">Avg cutover success</span></div>
+          <div class="stat"><b>18 min</b><span class="muted">Median RTO (DR)</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3 style="margin-top:0">Migration paths we handle</h3>
+        <ul>
+          <li>On‑prem ➜ AWS / Azure / GCP</li>
+          <li>VMs ➜ Containers (EKS/AKS/GKE)</li>
+          <li>Monolith ➜ Microservices</li>
+          <li>Databases: MySQL, Postgres, MongoDB, MS SQL</li>
+          <li>File servers ➜ S3 / Azure Blob / GCS</li>
+        </ul>
+        <p class="muted" style="margin:10px 0 0">We design runbooks, automate pipelines, and validate with rehearsal cutovers.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>What we do</h2>
+        <p class="muted">Pick a lane or bundle services for end‑to‑end delivery.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <div class="chip">🚀 Migration</div>
+          <h3>Cloud & App Migration</h3>
+          <p class="muted">Blueprints, landing zones, and cutovers with minimal downtime.</p>
+          <ul>
+            <li>Assessment & TCO</li>
+            <li>Landing zone, VPC/VNet</li>
+            <li>Database & data transfer</li>
+            <li>App refactor / replatform</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="chip">🛡️ Backup & DR</div>
+          <h3>Backups & Disaster Recovery</h3>
+          <p class="muted">Policy‑driven, immutable backups with fast RTO/RPO.</p>
+          <ul>
+            <li>Versioned object storage</li>
+            <li>Cross‑region replication</li>
+            <li>Runbooks & chaos drills</li>
+            <li>Compliance reporting</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="chip">⚙️ Managed</div>
+          <h3>Managed Cloud & FinOps</h3>
+          <p class="muted">24×7 monitoring, patching, and cost optimization.</p>
+          <ul>
+            <li>Observability & SLOs</li>
+            <li>Security hardening</li>
+            <li>Autoscaling & resilience</li>
+            <li>Monthly cost reviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <div class="container">
+      <div class="section-head">
+        <h2>How we deliver</h2>
+        <p class="muted">A proven, low‑risk migration playbook.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card step">
+          <div class="num">1</div>
+          <div>
+            <h3>Assess</h3>
+            <p class="muted">Discovery, architecture review, and success criteria.</p>
+          </div>
+        </div>
+        <div class="card step">
+          <div class="num">2</div>
+          <div>
+            <h3>Pilot</h3>
+            <p class="muted">POC environment, data sync, and rehearsal cutover.</p>
+          </div>
+        </div>
+        <div class="card step">
+          <div class="num">3</div>
+          <div>
+            <h3>Cutover</h3>
+            <p class="muted">Automated switchover with rollback plans and monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <h2>Portfolio</h2>
+        <p class="muted">Case studies you can filter by platform.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Portfolio filters">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="aws" role="tab">AWS</button>
+        <button class="filter-btn" data-filter="azure" role="tab">Azure</button>
+        <button class="filter-btn" data-filter="gcp" role="tab">GCP</button>
+        <button class="filter-btn" data-filter="k8s" role="tab">Kubernetes</button>
+        <button class="filter-btn" data-filter="backup" role="tab">Backup/DR</button>
+      </div>
+      <div class="grid cols-3" id="portfolioGrid">
+        <!-- Item 1 -->
+        <article class="card item" data-cat="aws k8s">
+          <div class="thumb"></div>
+          <div class="meta">
+            <strong>E‑commerce to EKS (AWS)</strong>
+            <p class="muted">Lift‑and‑shift + containerization; zero‑downtime cutover.</p>
+          </div>
+        </article>
+        <!-- Item 2 -->
+        <article class="card item" data-cat="azure backup">
+          <div class="thumb"></div>
+          <div class="meta">
+            <strong>Azure Backup w/ Immutable Vault</strong>
+            <p class="muted">Ransomware‑resilient backups, 15‑minute RPO.</p>
+          </div>
+        </article>
+        <!-- Item 3 -->
+        <article class="card item" data-cat="gcp k8s">
+          <div class="thumb"></div>
+          <div class="meta">
+            <strong>Data Platform to GKE (GCP)</strong>
+            <p class="muted">Streaming ETL to GCP with autoscaling.</p>
+          </div>
+        </article>
+        <!-- Item 4 -->
+        <article class="card item" data-cat="aws backup">
+          <div class="thumb"></div>
+          <div class="meta">
+            <strong>Cross‑Region DR on AWS</strong>
+            <p class="muted">Warm standby with Route 53 failover.</p>
+          </div>
+        </article>
+        <!-- Item 5 -->
+        <article class="card item" data-cat="azure k8s">
+          <div class="thumb"></div>
+          <div class="meta">
+            <strong>Monolith ➜ AKS Microservices</strong>
+            <p class="muted">Gradual strangler pattern migration.</p>
+          </div>
+        </article>
+        <!-- Item 6 -->
+        <article class="card item" data-cat="gcp backup">
+          <div class="thumb"></div>
+          <div class="meta">
+            <strong>Object Storage Backups on GCP</strong>
+            <p class="muted">Versioned buckets + lifecycle policies.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2 style="margin:0 0 6px">Free Migration Readiness Assessment</h2>
+          <p class="muted">Get a 3‑page report covering architecture, risks, and a phased plan with TCO estimates.</p>
+        </div>
+        <div style="text-align:right">
+          <a href="#contact" class="btn primary">Start now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact us</h2>
+        <p class="muted">Tell us about your stack. We’ll reply within one business day.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <form id="contactForm" novalidate>
+            <div class="inline">
+              <div>
+                <label for="name">Name</label><br>
+                <input id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div>
+                <label for="email">Email</label><br>
+                <input id="email" name="email" type="email" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div class="inline">
+              <div>
+                <label for="platform">Preferred Cloud</label><br>
+                <select id="platform" name="platform">
+                  <option value="aws">AWS</option>
+                  <option value="azure">Azure</option>
+                  <option value="gcp">GCP</option>
+                  <option value="multi">Multi‑cloud</option>
+                </select>
+              </div>
+              <div>
+                <label for="timeline">Timeline</label><br>
+                <select id="timeline" name="timeline">
+                  <option>Soon (0–3 months)</option>
+                  <option>Planning (3–6 months)</option>
+                  <option>Exploring (6+ months)</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="message">Project details</label><br>
+              <textarea id="message" name="message" placeholder="Current stack, databases, size (TB), downtime tolerance…"></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send</button>
+            <p id="formMsg" class="muted" role="status" aria-live="polite" style="margin:8px 0 0"></p>
+          </form>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Why Cloudkodes?</h3>
+          <p class="quote">“Their rehearsal cutovers and rollback plans gave us total confidence. We shipped our biggest release during the migration week.”</p>
+          <p class="who">— CTO, Fintech startup</p>
+          <ul>
+            <li>Certified across AWS, Azure, and GCP</li>
+            <li>Security‑first approach (least privilege, encryption, CIS)</li>
+            <li>Transparent pricing and weekly updates</li>
+          </ul>
+          <div class="muted">📍 Hyderabad • Remote‑first</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <div class="brand"><span class="logo" aria-hidden="true"></span><span>Cloudkodes</span></div>
+      <div>© <span id="year"></span> Cloudkodes. All rights reserved.</div>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub">gh</a>
+        <a href="#" aria-label="X">x</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tiny, safe JS — no libraries.
+    (function(){
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      menuBtn?.addEventListener('click', () => {
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', String(!expanded));
+        mobileNav.hidden = expanded; // toggle
+      });
+
+      // Smooth scroll for in‑page anchors
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const id = a.getAttribute('href');
+          if (!id || id === '#') return;
+          const el = document.querySelector(id);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({behavior:'smooth', block:'start'});
+            // close mobile panel after navigation
+            if (!mobileNav.hidden) { mobileNav.hidden = true; menuBtn.setAttribute('aria-expanded','false'); }
+          }
+        })
+      })
+
+      // Portfolio filtering
+      const buttons = Array.from(document.querySelectorAll('.filter-btn'));
+      const items = Array.from(document.querySelectorAll('#portfolioGrid .item'));
+      function applyFilter(cat){
+        items.forEach(it => {
+          const cats = (it.getAttribute('data-cat')||'').split(/\s+/);
+          const show = cat === 'all' || cats.includes(cat);
+          it.style.display = show ? '' : 'none';
+        });
+      }
+      buttons.forEach(btn => btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter(btn.dataset.filter);
+      }));
+
+      // Contact form (demo only). Validates required fields; no backend.
+      const form = document.getElementById('contactForm');
+      const msg = document.getElementById('formMsg');
+      form?.addEventListener('submit', e => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        if (!name || !email) {
+          msg.textContent = 'Please fill in your name and a valid email.';
+          msg.style.color = 'var(--accent)';
+          return;
+        }
+        msg.textContent = 'Thanks! We\'ll get back to you within 1 business day.';
+        msg.style.color = 'var(--brand-2)';
+        form.reset();
+      });
+
+      // Footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
