@@ -1,0 +1,51 @@
+p {
+  font-family: "Jersey 15", sans-serif;
+  position: absolute;
+  top: 200px;
+  left: 450px;
+  font-size: 43px;
+}
+
+.navbar {
+  font-family: "Jaini Purva", serif;
+  position: absolute;
+  top: 400px;
+  left: 450px;
+  font-size: 23px;
+  color: #257980;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #90752B;
+}
+#lottie-container {
+  width: 1500px;
+  height: 800px;
+}
+
+.dp img {
+  display: block;
+  width: 80px;
+  border-radius: 100px;
+  margin: 100px auto;
+  left: -800px;
+}
+.sm {
+  display: flex;
+  gap: 20px; /* space between icons */
+  position: absolute;
+  top: 130px;
+  left: 850px;
+}
+
+.sm img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.sm img:hover {
+  transform: scale(1.2);
+}
