@@ -5,38 +5,27 @@
   <body style="background-color:#8fa362; font-family: 'Jaini Purva', serif; font-size: 20px; line-height: 1.6;border: 4px solid #000000;margin: 20; 
   padding: 20px;">
      <h1>Projects</h1>
-     <h2>=== Finch – News application === <a href="https://github.com/NarmalaSk/Finch">github</a></h2>
-     Architecture
-     <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/5a5f0874-7b41-4f57-9053-8956851a6367" />
-     •	Built an end-to-end CI/CD pipeline from source code to production deployment, implementing Docker multi-stage builds, image registry workflows, unit testing, Kubernetes deployments, and automatic scaling using HPA.
+     <h2>BeanClassifier KF</h2>
+      
+• Built an end-to-end ML training and serving workflow using the Beans dataset (three-class leaf disease classification) and automated the entire process with Kubeflow Pipelines.
+<br>
+• Designed modular Kubeflow components (data preprocessing , training ,evaluation , model exporting) and containerized each stage using Docker for fully reproducible pipeline runs.
+<br>
+• Logged model metrics and artifacts to MLflow and stored final model weights in a GCS bucket for versioned, production-friendly model management.
+<br>
+• Developed a FastAPI inference service to serve the trained image classifier in real time, exposing a predict endpoint that processes uploaded leaf images and returns disease class probabilities.
+<br>
+• Deployed the serving API on Kubernetes with liveness/readiness probes and autoscaling enabled using HPA for reliable model inference under varying loads.
+
+     <h2>Finch – News application </h2>
+     <h3>Architecture</h3><br>
+     <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/5a5f0874-7b41-4f57-9053-8956851a6367" />
+     <br>•	Built an end-to-end CI/CD pipeline from source code to production deployment, implementing Docker multi-stage builds, image registry workflows, unit testing, Kubernetes deployments, and automatic scaling using HPA.
 
 
 <br>•	Successfully predicted potential production failures and proactively resolved issues using monitoring insights, improving system stability and reliability.
-
-     <h2>=== DocuMind – AI-Powered Document Q&A System === </h2>
-      <p>
-• Developed a FastAPI-based backend that enables users to upload PDFs or text files, extract
-content, and perform intelligent question-answering using OpenAI GPT-4 and LangChain workflows.<br>
-• Integrated Pinecone for embedding storage and Supabase for metadata, automating document
-ingestion, chunking, and retrieval pipelines, resulting in a 60% improvement in contextual response
-accuracy.<br>
-• Containerized the backend using Docker and deployed it on Render with GitHub Actions–based
-CI/CD for seamless version control and scalability</p>
-
-
-      <h2>=== VoiceQuery – Voice-Driven Knowledge Assistant === </h2>
-      <p>• Built an interactive AI assistant using FastAPI that combines OpenAI Whisper for speech-to-text,
-GPT-4 for reasoning, and ElevenLabs TTS for generating natural spoken responses.
-<br>• Integrated LangChain for contextual prompt flow management and Chroma DB for semantic
-vector storage, enabling low-latency conversational retrieval across voice queries.
-<br>• Deployed the complete pipeline on Render using Docker and implemented CI workflows for
-continuous delivery and version tracking.</p>
-
-
-
-
-
-     <h2> === QA Rag Pipeline ===</h2>
+<a href="https://github.com/NarmalaSk/Finch">github</a>
+     <h2> QA Rag Pipeline </h2>
      <p>
         A Simple Rag Pipeline Using Langchain and chromavectordb , Ollama ,HuggingFace Embedding Models <a href="https://github.com/NarmalaSk/AmbedkarGPT-Intern-Task">github</a>
         <h3>Architecture</h3>
